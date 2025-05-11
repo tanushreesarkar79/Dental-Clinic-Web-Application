@@ -1,0 +1,37 @@
+
+.App {
+  
+  text-align: center;
+}
+.doc-lab-login{
+    
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 40rem;
+  width: 23rem;
+}
+.d-flex{
+  display: flex;
+  width: 100%;
+  background-color: #f2f2f2;
+
+
+}
+.DoctorSideNavbar{
+  width: 15em;
+  height: 100vh;
+  /* background-color: #333; */
+  color: white;
+  /* padding: 20px; */
+}
+
+.DoctorDashboard {
+  width: 100%;
+  /* margin-top: 50px; */
+}
+
+.app-container{
+/*   display: flex; */
+}
+
