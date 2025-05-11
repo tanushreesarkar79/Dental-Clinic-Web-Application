@@ -1,0 +1,79 @@
+
+
+  .body-container {
+    
+    width: 100%;
+    margin:  auto;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* display: inline-block; */
+  }
+  .body-container label{
+    padding-left: 2px;
+    margin-right: 1em;
+    font-size: medium;
+    font-weight: bold;
+    
+  }
+  .body-container input[type="text"],
+  .body-container input[type="number"] {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+  }
+  .styled-select {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+  }
+  
+  .body-container input[type="file"] {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    /* max-width: 300px; */
+    border-radius: 4px;
+    font-size: 15px;
+    
+  }
+  .body-container .image{
+    margin: 10px 0;
+    padding: 8px;
+    height: 220px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 4px;
+    font-size: 15px;
+    padding-left: 7.45em;
+    align-items: center;
+    
+  }
+  .patientlabrecordsbutton {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #03C0C1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .patientlabrecordsbutton:hover {
+    background-color: #03fdfc;
+  }
+  
+  

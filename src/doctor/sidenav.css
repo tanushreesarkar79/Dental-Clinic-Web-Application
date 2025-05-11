@@ -1,0 +1,114 @@
+
+  .side-navbar-container
+  {
+    display: flex;
+    margin-top :-1px;
+    flex-direction: column;
+  }
+  .side-navbar {
+    flex-direction: column;
+
+    display: flex;
+    box-shadow: 2px 1px 5px #03C0C1;
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    left: 0;
+    background-color: #333;
+     border-top: 1px #03C0C1;
+    padding-top: 20px;
+    padding-right: 100px;
+    /* Ensure the sidebar doesn't cover other content */
+    z-index: 1000; /* Higher z-index to ensure it is on top */
+  }
+  .side-navbar {
+    max-height: 200vh; /* Ensure it doesn't overflow the viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: #333; /* Set your desired background color */
+    padding: 10px; /* Add some padding */
+  }
+  
+  /* Optional: Customize scrollbar style */
+  .side-navbar::-webkit-scrollbar {
+    width: 8px; /* Scrollbar width */
+    min-height: 100vh;
+     
+  }
+  
+  .side-navbar::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Scrollbar track color */
+  }
+  
+  .side-navbar::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar thumb color */
+  }
+  
+  .side-navbar::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Thumb color on hover */
+  }
+  
+  
+  .side-navbar  a {
+    padding:  16px 10px;/*top bottom,right left*/
+    text-decoration: none;
+    font-size: 23px;
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    display: block;
+    transition: 0.3s;
+    z-index: 1001;
+  }
+  
+  .side-navbar a:hover {
+    color: #03C0C1;
+    cursor: pointer;
+  }
+  .side-navbar a:active {
+    color: #03C0C1;
+    
+  }
+  
+  .options {
+  
+/*     display:flex;
+    flex-direction:column;
+    background-color: #333;
+    border: 1px solid #03C0C1;
+    position: absolute;
+    top:330px;
+    right:20px;
+    padding: 10px;
+    border-radius: 5px; */
+    /* color: aqua; */
+    align-items: center;
+    width: 215px;
+    text-align: center;
+    background-color: #444444;
+    
+  }
+ /*   #consultant{
+    display :none;
+   } */
+  
+  .options a {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    
+  }
+  
+  .options a:hover {
+    background-color: #575757;
+    color:#03C0C1
+  }
+  .options a:active {
+    background-color: #575757;
+    color:#03C0C1
+  }
+  

@@ -1,0 +1,186 @@
+/* General container style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /*background: linear-gradient(to right, #a0c4ff, aqua);*/
+  }
+.container {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    background: #a4c3d3;
+    max-width: 1000px;
+    margin-top: 50px;
+    
+    margin-right:110px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title of the page */
+.title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #007F80;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Select dropdown container */
+.select-container {
+    display: flex;
+    max-width: 1000px;
+    flex-direction: column;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+/* Label style */
+.label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: rgb(125, 110, 14);
+    text-align: center;
+}
+
+/* Select dropdown styling */
+.select-dropdown {
+    padding: 10px;
+    font-size: 1.2em;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 1px solid #007F80;
+    background-color: #ffffff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.select-dropdown:hover,
+.select-dropdown:focus {
+    border-color: #03c1c0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Error message style */
+.error {
+    text-align: center;
+    font-size: 1.2em;
+    color: #e74c3c;
+}
+
+/* Loading text */
+.loading {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Appointments section title */
+.appointments-title {
+    font-size: 2em;
+    color: rgb(134, 182, 56);
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* No appointments found message */
+.no-appointments {
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(125, 39, 39);
+}
+
+/* Appointments list styling */
+.appointments-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual appointment card */
+.appointment-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 340px;
+    padding: 20px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to right, #ffffff, #f0f9ff);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* .appointment-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+} */
+
+.appointment-card p {
+    font-size: 1.1em;
+    margin: 8px 0;
+    color: rgb(109, 41, 41);
+}
+
+.appointment-card strong {
+    color: rgb(169, 91, 91);
+}
+
+/* Reschedule button styling */
+.reschedule-btn {
+    background: linear-gradient(to right, #279b9b, #007F80);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 38px;
+    width: 100%;
+    max-width: 250px;
+    transition: all 0.3s ease;
+}
+
+.reschedule-btn:hover {
+    background: linear-gradient(to right, #007F80, #03c1c0);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Inline reschedule section for date-time picker and notify button */
+.reschedule-section-inline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Inline date-time picker */
+.datetime-picker-inline {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #03c1c0;
+    flex: 1;
+    background-color: #f9f9f9;
+}
+
+/* Inline notify button */
+.notify-btn-inline {
+    background: linear-gradient(to right, #007F80, #03c1c0);
+    color: white;
+    padding: 8px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.notify-btn-inline:hover {
+    background: linear-gradient(to right, #03c1c0, #007F80);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}

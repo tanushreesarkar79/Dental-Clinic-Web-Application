@@ -1,0 +1,172 @@
+/* Styling for the patient diaries table */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.patient-diaries-table 
+{
+  font-family: 'Inter', sans-serif;
+  width: 90%;
+  border-collapse: collapse;
+  margin: 30px auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+ 
+}
+
+/* Styling for table header cells */
+.patient-diaries-table th {
+  background-color: #03c0c1;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+ 
+  
+}
+
+/* Styling for table body cells */
+.patient-diaries-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 12px;
+  font-weight: normal;
+  font-size: 16px;
+  height: 50px;
+  
+  
+}
+.patient-basic-info-row
+{
+  width: 100px;
+}
+
+/* Hover effect for table rows */
+.patient-basic-info-row:hover {
+  background-color: #e0f7f8;
+}
+
+/* Styling for the header of the page */
+.patient-diaries-header  {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* Styling for buttons */
+
+/* Styling for the patient detail section */
+.patient-diaries-table {
+  width: 90%;
+  /* margin: 30px auto; */
+  margin-left: 150px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+
+.patient-diaries-table h3 {
+  font-size: 24px;
+  color: #03c0c1;
+  margin-bottom: 15px;
+}
+
+.patient-diaries-table p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+/* Styling for Close button inside patient details */
+
+
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+h4 {
+  font-size: 20px;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Utility classNameNamees for spacing */
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+/* Styling for the search input */
+.date-picker {
+  width: 30%;
+  padding: 10px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.foot
+{
+   text-align: center;
+}
+.date-picker:focus {
+  border-color: #03c0c1;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Modal overlay styling */
+.modal-overlay {
+ position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: fit-content;
+  background:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+           
+          
+           
+}
+
+/* Modal content styling */
+.modal-content {
+   background: white;
+  border-radius: 8px;
+  padding-left: 100px; 
+  padding: 2px;
+  padding-left: 50px;
+  margin-top: 10px;
+  width: calc(100% - 220px); 
+  height: calc(100% - 100px);  
+  height: fit-content;
+  font-family:Arial,sans-serif; 
+  margin-bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+  
+
+
+/* Button styling */
+
+.modal-content p
+{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 0.8;
+}

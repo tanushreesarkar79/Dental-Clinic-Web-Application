@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@200;800&display=swap");
+.app{
+    margin-left:200px;
+  display:block;
+}
+
+
+.patient-filter {
+  font-family: "Inter", sans-serif;
+  display: inline-flex;
+  
+}
+
+.heading {
+  
+  text-align: center;
+  margin-bottom: 20px;
+  display: inline-flex;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  height: 250px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease, width 0.2s ease,
+    height 0.2s ease;
+  overflow: hidden;
+}
+
+.card.expanded {
+  /*height: auto;*/
+  /*width: 80%;*/
+  /*position: fixed;*/
+  height: 70vh; /* Adjust the height for full expansion */
+  width: 70%; /* Expand the width smoothly */
+   position: fixed; 
+  top: 20%; /* Adjust the top position */
+  left: 20%; /* Adjust the left position */
+  z-index: 10; /* Ensure the card appears on top */
+  transition: transform 0.3s ease, width 0.2s ease, height 0.2s ease;
+}
+
+.card.hidden {
+  display: none;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.time {
+  font-size: 2.3rem;
+  font-weight: 900;
+  /*color: #f05d5e;*/
+  color: #03c0c1;
+  text-align: center;
+}
+
+.dailyappointments-table {
+  width: 100%;
+}
+
+.dailyappointments-table td {
+  padding: 5px 0;
+}
+
+.dailyappointments-table td:nth-child(1) {
+  font-weight: 600;
+  color: #333333;
+  padding-right: 5px;
+  text-align: right;
+  width: 50%;
+}
+
+.dailyappointments-table td:nth-child(2) {
+  width: 50%;
+  text-align: left;
+  padding-left: 5px;
+  color: #555555;
+}
+
+/* Expanded state for table columns */
+.card.expanded .dailyappointments-table {
+  width: 100%;
+  /*border: 1px solid black;*/
+  border-collapse: collapse;
+}
+
+.card.expanded .dailyappointments-table td {
+  padding: 10px 0;
+  border-bottom: 1px solid black;
+}
+
+.card.expanded .dailyappointments-table td:first-child {
+  width: 15%; /* When expanded, first column should be 15% */
+  text-align: left;
+  padding-left: 5%;
+}
+
+.card.expanded .dailyappointments-table td:last-child {
+  width: 85%; /* Remaining width for the second column */
+  padding-left: 3%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  /*background-color: #f05d5e;*/
+  background-color: #03c0c1;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  /*background-color: #e74c3c;*/
+  background-color: #007f80;
+}
+
+.extra-details {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Style for dropdown */
+.filter {
+ position: absolute;
+  right: 20px; 
+  
+}
+
+#dateFilter {
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}

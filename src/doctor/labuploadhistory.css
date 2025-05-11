@@ -1,0 +1,75 @@
+.labuploadhistorytable{
+    margin-left: 240px;
+    width: calc(100% - 240px);
+    border-collapse: collapse;
+    margin-top: 20px;
+
+}
+.labuploadhistorytable tr{
+    border-bottom: 1px solid #03FDFC;
+}
+.labuploadhistory-action{
+    text-align: center;
+}
+.labuploadhistorytable th{
+    padding: 10px;
+    text-align: left;
+    background-color: grey;
+    color: white;
+}
+.labuploadhistorytable td{
+    padding: 10px;
+    text-align: left;
+}
+.labuploadhistory-actionbutton{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.labuploadhistory-actionbutton button{
+    
+   
+    text-align: center;
+    background-color: #03c0c1;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-labreport-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin: 5px;
+}
+.view-labreport-header{
+    align-items: center;
+    padding-left: 480px;
+    
+}
+.search-filter-container {
+    display: flex;
+    gap: 10px;
+}
+
+.view-labreport-search-input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 250px;
+}
+
+.filter-select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+

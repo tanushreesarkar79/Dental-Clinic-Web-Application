@@ -1,0 +1,163 @@
+/* General Container */
+
+.payment-history-container {
+  font-family: 'Arial', sans-serif;
+  margin-top: 50px;
+  margin-left:250px;
+  margin-right:50px;
+  max-width: 1500px;
+  padding: 20px;
+  background: linear-gradient(135deg, #dde879,#9dc8ec);
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-history-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+.payment-history-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.payment-history-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #555;
+}
+
+.payment-history-form input,
+.payment-history-form select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.payment-history-form input:hover,
+.payment-history-form select:hover {
+  border-color: #03c0c1;
+  box-shadow: 0 0 5px rgba(3, 192, 193, 0.5);
+}
+
+.payment-history-form button {
+  padding: 10px;
+  background-color: #026f70;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-history-form button:hover {
+  background-color: #03c0c1;
+}
+
+/* Loading and No Records Message */
+.loading-message,
+.no-records-message {
+  text-align: center;
+  color: rgb(195, 41, 41);
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Table Styling */
+.payment-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.payment-history-table th,
+.payment-history-table td {
+  text-align: left;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.payment-history-table th {
+  background-color: #03c0c1;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.payment-history-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.payment-history-table tr:hover {
+  background-color: #d9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+/* Highlighted Styles for Amounts */
+.payment-history-table td:nth-child(5), /* Amount Paid */
+.payment-history-table td:nth-child(6), /* Total Amount */
+.payment-history-table td:nth-child(7)  /* Balance */ {
+  font-weight: bold;
+  color: #03a9f4;
+}
+
+.payment-history-table td:nth-child(7) {
+  color: #ff5722; /* Highlight balance in red */
+}
+
+/* Action Buttons */
+.payment-history-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.payment-history-actions button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.payment-history-actions button:nth-child(1) {
+  background-color: #03c0c1;
+  color: white;
+}
+
+.payment-history-actions button:nth-child(1):hover {
+  background-color: #026f70;
+}
+
+.payment-history-actions button:nth-child(2) {
+  background-color: #4caf50;
+  color: white;
+}
+
+.payment-history-actions button:nth-child(2):hover {
+  background-color: #357a38;
+}
+
+.payment-history-actions button:nth-child(3) {
+  background-color: #f44336;
+  color: white;
+}
+
+.payment-history-actions button:nth-child(3):hover {
+  background-color: #ba000d;
+}

@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@200;800&display=swap");
+/* body {
+    font-family: "Inter", sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+} */
+.patient-filter {
+    font-family: "Inter", sans-serif;
+}
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*.card-container {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    gap: 50px;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    transition: opacity 0.1s ease;
+}
+
+/* Basic Card Styling */
+/*.card {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-between;*/
+/*    width: 250px;*/
+/*    height: 250px;*/
+/*    background-color: #ffffff;*/
+/*    border-radius: 12px;*/
+/*    padding: 10px;*/
+/*    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);*/
+/*    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;*/
+/*    overflow: hidden;*/
+/*    cursor: pointer;*/
+/*}*/
+
+.card {
+    /* Initial styles for the small card */
+    width: 250px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+    /*transform: scale(1);
+    opacity: 1;*/
+    z-index: 0;
+    
+}
+/* Hover Zoom Effect (applies only when card is not expanded) */
+.card:not(.expanded):hover {
+    /*transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+/* Expanded State Styling */
+/*.card.expanded {*/
+/*    height: auto;*/
+/*    width: 60%;*/
+/*    position: fixed;*/
+/*    top: 10%;*/
+/*    left: 15%;*/
+/*    z-index: 10;*/
+/*    transform: none; !* No zoom for expanded state *!*/
+/*    transition: none;*/
+/*}*/
+.card.expanded {
+    /* Styles for the expanded card */
+    width: 60%;
+    height: 75vh;
+    position: fixed;
+/*     top: 10%;
+    left: 10%; */
+    bottom: 30px;
+    left: 350px;
+    z-index: 10;
+    transform: scale(1.05); /* Slightly larger scale for effect */
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.card.hidden {
+    display: none;
+}
+.time {
+    font-size: 2.3rem;
+    font-weight: 900;
+    /*color: #f05d5e;*/
+    color: #03c0c1;
+    text-align: center;
+}
+.patients-Visit-table {
+    width: 100%;
+}
+.patients-Visit-table td {
+    padding: 5px 0;
+}
+.patients-Visit-table td:nth-child(1) {
+    font-weight: 600;
+    color: #333333;
+    padding-right: 5px;
+    text-align: right;
+    width: 50%;
+}
+.patients-Visit-table td:nth-child(2) {
+    width: 50%;
+    text-align: left;
+    padding-left: 5px;
+    color: #555555;
+}
+/* Expanded state for table columns */
+.card.expanded table {
+    width: 100%;
+    /*border: 1px solid black;*/
+    border-collapse: collapse;
+}
+.card.expanded table td {
+    padding: 10px 0;
+    /*border-bottom: 1px solid black;*/
+}
+.card.expanded table td:first-child {
+    width: 15%; /* When expanded, first column should be 15% */
+    text-align: left;
+    padding-left: 5%;
+}
+.card.expanded table td:last-child {
+    width: 85%; /* Remaining width for the second column */
+    padding-left: 3%;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+button {
+    /*background-color: #f05d5e;*/
+    background-color: #03c0c1;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    /*background-color: #e74c3c;*/
+    background-color: #007f80;
+}
+.extra-details {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+/* Style for dropdown */
+.filter {
+    position: absolute;
+    top: 38px;
+    right: 35px;
+    z-index: 1000;
+}
+#dateFilter {
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.button {
+    /* Base button styles */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px; /* Adjust the radius as needed */
+    /* ... other styles */
+}
+
+
+.card.expanded .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+.patient-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: gray;
+    border: none;
+    background: transparent;
+}
+
+.appointment-time {
+    font-size: 0.9em;
+    padding: 4px 8px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
