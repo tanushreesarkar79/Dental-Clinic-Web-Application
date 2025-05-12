@@ -197,7 +197,7 @@ const Landingpage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.send('service_qe5wqvp', 'template_iznpaft', formData, 'IslWuBapTdn4z-Q7x')
+    emailjs.send('service_api', 'template_api', formData, 'API') // paste the email Js api here
       .then((response) => {
         console.log('Email sent successfully:', response);
         alert('Message sent successfully!');
